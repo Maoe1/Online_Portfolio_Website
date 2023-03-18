@@ -4,14 +4,10 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 
-app.get('/path/to/file.pdf', function(req, res) {
-    res.setHeader('Content-Disposition', 'attachment; filename=resume.pdf');
-    res.sendFile('/path/to/resume.pdf');
-  });
 
 const port = process.env.PORT || 3000;
 app.listen(port, function() {
