@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Mahmoud Farghali</title>
+  <!-- Link to Bootstrap CSS file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  
+  <script>
+    function toggleHiddenContainer(section) {
+        var hiddenContainers = document.querySelectorAll("[id^='hidden-container-']");
+        for (var i = 0; i < hiddenContainers.length; i++) {
+         if (hiddenContainers[i].id === "hidden-container-" + section) {
+            if (hiddenContainers[i].style.display === "none") {
+                hiddenContainers[i].style.display = "block";
+            } else {
+                hiddenContainers[i].style.display = "none";
+            }
+        } else {
+             hiddenContainers[i].style.display = "none";
+        }
+    }
+}
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">My Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="container my-5">
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <div class="card h-100" onclick="toggleHiddenContainer('1')">
+              <div class="card-body">
+                <h5 class="card-title">Personal Data</h5>
+                <p class="card-text">Click here to open a new container</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100" onclick="toggleHiddenContainer('2')">
+              <div class="card-body">
+                <h5 class="card-title">Academic Credentials</h5>
+                <p class="card-text">Click here to open a new container</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100" onclick="toggleHiddenContainer('3')">
+              <div class="card-body">
+                <h5 class="card-title">Academic Work Experience</h5>
+                <p class="card-text">Click here to open a new container</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100" onclick="toggleHiddenContainer('4')">
+              <div class="card-body">
+                <h5 class="card-title">Professional Summary</h5>
+                <p class="card-text">Click here to open a new container</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  
+  <!-- Hidden container that can be accessed on the same page -->
+  <div class="container my-5" id="hidden-container-1" style="display:none;">
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <h2>Bio</h2>
+        <p>Insert your bio here.</p>
+      </div>
+      <div class="col-md-12 mb-3">
+        <h2>Resume</h2>
+        <p>Please click <a href="#" download="Resume_101347618.docx">here</a> to download my resume.</p>
+      </div>
+      <div class="col-md-12 mb-3">
+        <h2>Cover Letter</h2>
+        <p>Please click <a href="#" download="resume_placeholder.pdf">here</a> to download my cover letter.</p>
+      </div>
+      <div class="col-md-12 mb-3">
+        <h2>Philosophy/Statement of Career Goal</h2>
+        <p>Insert your philosophy or statement of career goal here.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden container that can be accessed on the same page -->
+  <div class="container my-5" id="hidden-container-2" style="display:none;">
+   <div class="row">
+      <div class="col-md-12 mb-3">
+        <h2>Certificates/Degrees and Academic Awards</h2>
+        <p>Insert information about your certificates, degrees and academic awards here.</p>
+      </div>
+      <div class="col-md-12 mb-3">
+      <h2>Academic Record/Transcript</h2>
+      <p>Insert your academic record/transcript here.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Hidden container that can be accessed on the same page -->
+<div class="container my-5" id="hidden-container-3" style="display:none;">
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <h2>Academic Work Samples</h2>
+      <ul>
+        <li>Sample 1</li>
+        <li>Sample 2</li>
+        <li>Sample 3</li>
+        <li>Sample 4</li>
+        <li>Sample 5</li>
+      </ul>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Capstone Project</h2>
+      <p>Insert your capstone project information here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Project Summary</h2>
+      <p>Insert your project summary here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Project Vision</h2>
+      <p>Insert your project vision here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Project/Business Requirements</h2>
+      <p>Insert your project/business requirements here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Project Plan</h2>
+      <p>Insert your project plan here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Requirements Analysis and Design</h2>
+      <p>Insert your requirements analysis and design information here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Wireframes/Mock ups</h2>
+      <p>Insert your wireframes/mock ups here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Status Reports</h2>
+      <p>Insert your status reports here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>System Implementation</h2>
+      <p>Insert your system implementation information here.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Hidden container that can be accessed on the same page -->
+<div class="container my-5" id="hidden-container-4" style="display:none;">
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <h2>Professional Work Samples</h2>
+      <p>Insert professional work samples here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Community Service/Volunteer Work</h2>
+      <p>Insert community service/volunteer work here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Copies of Letters of Recommendation</h2>
+      <p>Insert copies of letters of recommendation here.</p>
+    </div>
+    <div class="col-md-12 mb-3">
+      <h2>Copies of Awards and Recognition</h2>
+      <p>Insert copies of awards and recognition here.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
