@@ -1,1 +1,1 @@
-buildpack: nodejs
+web: node index.js
