@@ -7,11 +7,59 @@
   padding: 20px;
 }
 
+body {
+  padding: 0 200px; /* Adjust the value as per your preference */
+  justify-content: center;
+  background-color: #6c757d !important;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
 .card.h-100 {
     background-color: #1E3A5F;
     color: #FFFFFF;
 }
 
-.body-1 {
-    background-color: lightblue;
+.navbar {
+  background-color: #1E3A5F;
+  color: white;
+}
+
+.nav-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-item {
+  margin-right: 20px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+
+.img-fluid {
+  height: 90px; 
+  width: 90px;
+  border-radius: 50%;
+}
+
+#aboutme {
+  background-color: #1E3A5F;
+  color: #fff;
+  padding: 10px;
+}
+
+footer {
+  background-color: #1E3A5F !important;
+  color: #fff;
 }

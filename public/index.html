@@ -28,25 +28,20 @@
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">My Website</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <h5>My Online Portfolio</h5>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a href="about.html" class="nav-link">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Posts</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
+       
       </ul>
     </div>
   </nav>
@@ -90,19 +85,28 @@
       <div class="col-md-8 mb-3">
         <h2>Bio</h2>
         <p>I'm a bright ambitious person who seeks new knowledge and thrives to learn something new every day.
-           I wish that one day, I will be able to use all my skills and experiences combined to help others and spread joy.</p>
+          I wish that one day, I will be able to use all my skills and experiences combined to help others and spread joy.</p>
         <h2>Resume</h2>
         <a href="https://online-portfolio.herokuapp.com/resume.pdf" target="_blank">Download Resume PDF</a>
         <h2>Cover Letter</h2>
         <a href="https://online-portfolio.herokuapp.com/cover_letter.pdf" target="_blank">Download Cover Letter PDF</a>
-        <h2>Philosophy/Statement of Career Goal</h2>
+        <h2>Philosophy</h2>
         <p>I always stand by following my instincts and understand that everybody goes through life in different cycles so patience is always key.</p>
+        <h2>Career Statement</h2>
+        <p> My goal is to start a career in data structures and algorithms.</p>
       </div>
       <div class="col-md-4 mb-3 order-md-last">
-        <img src="https://storage.googleapis.com/photos-mahmoud/IMG_1251.JPG" alt="Profile Picture" class="img-fluid">
+        <table>
+          <tr>
+            <td>
+              <img src="https://storage.googleapis.com/photos-mahmoud/IMG_1251.JPG" alt="Profile Picture" class="img-fluid">
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>
+  
   <!-- Hidden container 2-->
   <div class="container my-5" id="hidden-container-2" style="display:none;">
    <div class="row">
@@ -173,5 +177,16 @@
   </div>
 </div>
 
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2023 Mahmoud Farghali. All rights reserved.</p>
+  </footer>
+
+
+ <!-- Link to Bootstrap JavaScript file -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
